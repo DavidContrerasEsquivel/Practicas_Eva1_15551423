@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <RadioGroup
+        android:id="@+id/rdGrpOpciones"
+        android:layout_width="277dp"
+        android:layout_height="395dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdBtnTamales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tamales"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rdBtnTortas"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rdBtnMontados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Montados"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rdBtnChiles"
+            app:layout_constraintTop_toBottomOf="@+id/rdBtnChiles" />
+
+        <RadioButton
+            android:id="@+id/rdBtnTacos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tacos"
+            app:layout_constraintBottom_toTopOf="@+id/rdBtnTortas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rdBtnChiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chiles"
+            app:layout_constraintBottom_toTopOf="@+id/rdBtnMontados"
+            app:layout_constraintStart_toStartOf="@+id/rdBtnTamales"
+            app:layout_constraintTop_toBottomOf="@+id/rdBtnTortas" />
+
+        <RadioButton
+            android:id="@+id/rdBtnTortas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:text="Tortas"
+            app:layout_constraintBottom_toTopOf="@+id/rdBtnChiles"
+            app:layout_constraintStart_toStartOf="@+id/rdBtnTacos"
+            app:layout_constraintTop_toBottomOf="@+id/rdBtnTacos" />
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

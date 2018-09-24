@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Principal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="EXPECTATIVA DE VIDA"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:text="AÑO DE NACIMIENTO:"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/txtFechNac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:paddingBottom="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="REGIÓN DE NACIMIENTO:"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:id="@+id/rdgpRegiones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <RadioButton
+            android:id="@+id/btnDesarr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Regiones Desarrolladas" />
+
+        <RadioButton
+            android:id="@+id/btnAmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="América Latina" />
+
+        <RadioButton
+            android:id="@+id/btnAsia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Asia" />
+
+        <RadioButton
+            android:id="@+id/btnAfri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Africa" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:text="GENERO:"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:id="@+id/rdgpGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/btnHom"
+            android:layout_width="169dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/btnMujer"
+            android:layout_width="168dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Mujer" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="EXPECTATIVA DE VIDA:"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/txtVida"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AÑOS"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FECHA PROBABLE DE DECESO: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/txtDeceso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

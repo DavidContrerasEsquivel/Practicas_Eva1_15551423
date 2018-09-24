@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal">
+
+    <RadioGroup
+        android:id="@+id/rdgIdioma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdBtnEsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Español"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rdBtnIng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingles"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtVwNomre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtTxtNomre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduce Nombre"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtVwApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apellido:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edttxtApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduce Apellido"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtVwEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edad:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtVwEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduce Edad"
+        android:inputType="number"
+        android:textSize="24sp" />
+</LinearLayout>
